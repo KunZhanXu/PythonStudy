@@ -1,0 +1,65 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+ENV/
+
+# ===== 环境变量与密钥 =====
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.yaml
+secrets.json
+
+# ===== 模型与数据文件（体积大，不进仓库）=====
+*.bin
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+models/
+checkpoints/
+data/
+datasets/
+*.sqlite3
+*.db
+
+# ===== 向量库与缓存 =====
+.chroma/
+chroma_db/
+faiss_index/
+*.faiss
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+logs/
+*.log
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== IDE 与系统 =====
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ===== LangChain / Agent 框架运行时 =====
+.langchain/
+.agent_state/
+traces/
